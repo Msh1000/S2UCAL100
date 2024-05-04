@@ -20,7 +20,7 @@ var capAmount =  document.getElementById('Captured');
 
 deliveredRadio.addEventListener('change', function() {
     if (this.checked) {
-        //console.log('Order Delivered radio button selected');
+        console.log('Order Delivered radio button selected');
         capAmount.value = "";
         capAmount.disabled = false;
     }
@@ -28,7 +28,7 @@ deliveredRadio.addEventListener('change', function() {
 
 cancelledRadio.addEventListener('change', function() {
     if (this.checked) {
-        //console.log('Order Cancelled radio button selected');
+        console.log('Order Cancelled radio button selected');
         capAmount.value = 0;
         capAmount.disabled = true;
     }
