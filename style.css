@@ -349,6 +349,21 @@
   font-weight: bold;
 }
 
+
+@keyframes breathe {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.07);
+  }
+}
+
+.breathe-animation {
+  animation: breathe 1.4s 30 alternate;
+}
+
+
 #calculateButton {
   cursor: pointer;
     color: #fff;

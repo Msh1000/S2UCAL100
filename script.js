@@ -164,8 +164,10 @@ function predictiveSearch() {
         document.getElementById("storeNameOutput").textContent = "Store Name: " + storeName ;
         document.getElementById("warningMessage").textContent = "";
         copyAndSendButton.removeAttribute("disabled");
-      var warningMessage = document.getElementById("warningMessage");
-    warningMessage.textContent = ""; // Clear warning message
+        copyAndSendButton.classList.add("breathe-animation");
+        var warningMessage = document.getElementById("warningMessage");
+        warningMessage.textContent = ""; // Clear warning message
+        
         }
     }
 
@@ -258,6 +260,7 @@ var selectedStore ="";
   var ccEmails = 'dhashen.govender@spar.co.za; Mohammed.Haroun@spar.co.za; retailhelpdeskco@spar.co.za'
   var emailLink = "mailto:support@switch.tj?subject=SPAR2U Refund Query - Order #"+orderNumber + " || " + storeName + " " + selectedStore + "&body=" + emailBody + "&cc=" + ccEmails;
   window.location.href = emailLink;
+  copyAndSendButton.classList.remove("breathe-animation");
 }
 
 function closePopup() {
