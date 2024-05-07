@@ -219,12 +219,12 @@ var selectedStore ="";
 
     if (orderStatus === "Order Delivered") {
       
-      console.log("Order is in status D.");
+      //console.log("Order is in status D.");
       var outputText = "Store Name: " + storeName  + "\n\nOrder Number: #" + orderNumber + "\n\n" + totaltotalAmount + "\n\n" + settlementAmount + "\n\n" + refundAmount;
       var keyWord = "refund";
     } else {
      
-      console.log("Order is not in status D.");
+      //console.log("Order is not in status D.");
       var outputText = "Store Name: " + storeName  + "\n\nOrder Number: #" + orderNumber + "\n\n" + totaltotalAmount;
       var keyWord = "reversal";
     }
@@ -257,7 +257,7 @@ var selectedStore ="";
 
   // Open email 
   var emailBody = encodeURIComponent("Hi TJ,\n \nPlease advise if the below SPAR2U" + " " + keyWord + " " + "has been processed:\n\n" + outputText + "\n\n");
-  var ccEmails = 'dhashen.govender@spar.co.za; Mohammed.Haroun@spar.co.za; retailhelpdeskco@spar.co.za'
+  var ccEmails = 'dhashen.govender@spar.co.za; Mohammed.Haroun@spar.co.za; Nadia.Karreem@spar.co.za; retailhelpdeskco@spar.co.za'
   var emailLink = "mailto:support@switch.tj?subject=SPAR2U Refund Query - Order #"+orderNumber + " || " + storeName + " " + selectedStore + "&body=" + emailBody + "&cc=" + ccEmails;
   window.location.href = emailLink;
   copyAndSendButton.classList.remove("breathe-animation");
