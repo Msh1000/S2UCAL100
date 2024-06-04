@@ -246,7 +246,7 @@ TOPS Stanger Spot On
 SPAR The Acres
 TOPS Acres
 SUPERSPAR Karaglen
-Vorna Valley
+SPAR Vorna Valley
 TOPS Vorna Valley
 SUPERSPAR Middelburg Mall
 TOPS Middelburg Mall
@@ -559,3 +559,4 @@ Royal Ascot TOPS
 SPAR Weltevreden
 SPAR Oudtshoorn
 TOPS Oudtshoorn
+TOPS On First
