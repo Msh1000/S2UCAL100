@@ -126,15 +126,16 @@
     .input input {
         outline: none;
         border: none;
-        border-bottom: 2px solid #434343;
+        border-bottom: 1.9px solid #0057b5;
         text-align: center;
         font-size: 17px;
         height: 35px;    
         font-family: "Nunito", sans-serif;
         border-radius: 12px;
         font-weight: bold;
-        background:  #e7ecef;
+        background:  #2d2d2d;
         width: 45%;
+        color:#e7ecef;
     }
 
     .store { 
@@ -148,7 +149,7 @@
     .store input{
       outline: none;
       border: none;
-      border-bottom: 2px solid #434343;
+      border-bottom: 1.9px solid #0057b5;
       text-align: center;
       font-size: 15px;
       height: 37px;    
@@ -156,7 +157,8 @@
       border-radius: 12px;
       font-weight: bold;
       min-width: 72%;
-      background: #e7ecef;
+      background: #2d2d2d;
+      color:#e7ecef;
     }
 
     .store label{
@@ -214,13 +216,13 @@
       left: 0;
       height: 25px;
       width: 25px;
-      background-color: #eee;
+      background-color: #2d2d2d;
       border-radius: 50%;
     }
     
     /* On mouse-over, add a grey background color */
     .status .container:hover input ~ .checkmark {
-      background-color: #ccc;
+      background-color: #7a7a7a;
     }
     
     /* When the radio button is checked, add a blue background */
@@ -247,7 +249,7 @@
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: white;
+        background: #2d2d2d;
     }
     /* END Style for Radio */
 
@@ -272,7 +274,7 @@
  .inputW input {
   outline: none;
   border: none;
-  border-bottom: 2px solid #434343;
+  border-bottom: 1.9px solid #0057b5;
   padding: 10px;  
   text-align: center;
   font-size: 16px;
@@ -281,13 +283,13 @@
   width: 80%;
   height: 38%; 
   border-radius: 12px;
-  background: #e7ecef;
+  background: #2d2d2d;
+  color:#e7ecef;
   }
 
   .inputW input:disabled {
-    background: #f8f8f8d5; 
-    color: #000; 
-    border-bottom: 2px solid #434343; 
+    background: #2d2d2d; 
+    color: #e7ecef; 
 }
 
   .inputH {
@@ -312,7 +314,7 @@
  .inputH input {
       outline: none;
       border: none;
-      border-bottom: 2px solid #434343;
+      border-bottom: 1.9px solid #0057b5;
       padding: 10px;  
       text-align: center;
       font-size: 16px;
@@ -321,7 +323,8 @@
       width: 80%;
       height: 38%; 
       border-radius: 12px;
-      background: #e7ecef;
+      background: #2d2d2d;
+      color:#e7ecef;
   }
    
 
@@ -443,13 +446,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #2d2d2d;
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-weight: bold;
   overflow: auto;
+  color: #e7ecef;
 }
 
 .popup-close {
@@ -483,12 +487,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f9f9f9;
+  background-color: #2d2d2d;
   box-shadow: #000;
   z-index: 1;
   list-style-type: none; 
   padding: 0; 
-      outline: none;
+    outline: none;
     border: none;
     border-bottom: 1px solid #4f7df9;
     border-radius: 12px;
@@ -500,6 +504,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     min-width: 300px;
+    color:#e7ecef;
  
         
 }
@@ -515,7 +520,7 @@
 }
 
 #suggestionsDropdown li:hover {
-  background-color: #ddd;
+  background-color: #2d2d2d;
 }
 
 /* Tooltip text */
