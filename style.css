@@ -13,7 +13,7 @@
     justify-content: center;
     min-height: 100vh;
 	 /* background: linear-gradient(to right, #83a4d4, #b6fbff); */
-   background: linear-gradient(to right, #191723, #060606);
+   linear-gradient(to right, rgb(2 26 56), rgb(0, 8, 20));
     }
 /* 
   .container {
