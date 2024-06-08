@@ -35,6 +35,32 @@ cancelledRadio.addEventListener('change', function() {
     }
 });
 
+var toggleButton = document.getElementById("toggle-button");
+var themeStyle = document.getElementById("theme-style");
+
+var setTheme = (theme) => {
+  if (theme === 'dark') {
+      themeStyle.setAttribute("href", "style.css");
+  } else {
+      themeStyle.setAttribute("href", "lightstyle.css");
+  }
+};
+
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            setTheme(prefersDarkScheme ? 'dark' : 'light');
+
+            // Listen for changes in the theme preference
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+                setTheme(event.matches ? 'dark' : 'light');
+            });
+
+            toggleButton.addEventListener("click", () => {
+              if (themeStyle.getAttribute("href") === "lightstyle.css") {
+                  themeStyle.setAttribute("href", "style.css");
+              } else {
+                  themeStyle.setAttribute("href", "lightstyle.css");
+              }
+          });
 
   fetch('storeNames.txt')
         .then(response => response.text())

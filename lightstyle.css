@@ -1,5 +1,5 @@
 /* Import Google Font - Poppins */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     *{
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     justify-content: center;
     min-height: 100vh;
 	 /* background: linear-gradient(to right, #83a4d4, #b6fbff); */
-   background: linear-gradient(to right, #191723, #060606);
+   background: linear-gradient(to right, #001d3d, #000814);
     }
 /* 
   .container {
@@ -22,10 +22,10 @@
 
   .box {
     width: 550px;
-    background: #252525;
+    background: #e7ecef;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 2px 2px 20px 5px #2e2e2e3a; 
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5); 
     min-height: 450px; /* Set a fixed starting height */
     padding: 20px; /* Add some padding for better spacing */
     box-sizing: border-box;  
@@ -38,7 +38,7 @@
 
   p {
   margin: 5px;
-  color: #21b3df;
+  color: #168aad;
   text-align: center;
   font-size: 17.3px;
   font-family: "Nunito", sans-serif;
@@ -46,7 +46,7 @@
 
 }
   h1 { 
-  color: #1ba3cc;
+  color: #168aad;
   /* Pearl Purple */
   font-family: 'Roboto', sans-serif;  /* Fancy font */
   margin-bottom: 10px;
@@ -102,7 +102,7 @@
     }
     
     .input {
-        background: #1e1e1e;
+        background: #f8f8f8;
         box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
         border-radius: 12px;
         padding: 20px 0;
@@ -117,7 +117,7 @@
         display: block;
         font-size: 16.5px;
         font-weight: 550;
-        color: #e7ecef;
+        color: #000;
         margin-bottom: 20px;
        
     }
@@ -126,19 +126,19 @@
     .input input {
         outline: none;
         border: none;
-        border-bottom: 2px solid #434343;
+        border-bottom: 1px solid #4f7df9;
         text-align: center;
         font-size: 17px;
         height: 35px;    
         font-family: "Nunito", sans-serif;
         border-radius: 12px;
         font-weight: bold;
-        background:  #e7ecef;
+        background: f8f8f8;
         width: 45%;
     }
 
     .store { 
-        background: #1e1e1e;
+        background: #f8f8f8;
         box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
         border-radius: 12px;
         padding: 20px 0;
@@ -148,22 +148,21 @@
     .store input{
       outline: none;
       border: none;
-      border-bottom: 2px solid #434343;
+      border-bottom: 1px solid #4f7df9;
       text-align: center;
       font-size: 15px;
-      height: 37px;    
+      height: 35px;    
       font-family: "Nunito", sans-serif;
       border-radius: 12px;
       font-weight: bold;
       min-width: 72%;
-      background: #e7ecef;
     }
 
     .store label{
       display: block;
       font-size: 17px;
       font-weight: 550;
-      color: #e7ecef;
+      color: #000;
       margin-bottom: 20px;
     }
 
@@ -172,7 +171,7 @@
       justify-content: space-around;
       align-items: center;
       align-content: center;
-      background: #1e1e1e;
+      background: #fff;
       box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
       border-radius: 12px;
       padding: 13px 0;
@@ -180,7 +179,7 @@
       
   }
   .text {
-    color: #e7ecef; 
+    color: #000; 
     text-align: center;
     font-size: 15px;
     font-family: "Nunito", sans-serif;
@@ -252,7 +251,7 @@
     /* END Style for Radio */
 
     .inputW {
-      background: #1e1e1e;
+      background: #f8f8f8;
       box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
       border-radius: 12px;
       padding: 10px 0;
@@ -265,33 +264,26 @@
   .inputW label {
       display: block;
       font-weight: 550;
-      color: #e7ecef;
+      color: #000;
       margin-bottom: 20px;
   }
 
  .inputW input {
   outline: none;
   border: none;
-  border-bottom: 2px solid #434343;
+  border-bottom: 1px solid #4f7df9;
   padding: 10px;  
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
   width: 80%;
-  height: 38%; 
+  height: 35%; 
   border-radius: 12px;
-  background: #e7ecef;
   }
 
-  .inputW input:disabled {
-    background: #f8f8f8d5; 
-    color: #000; 
-    border-bottom: 2px solid #434343; 
-}
-
   .inputH {
-      background: #1e1e1e;
+      background: #f8f8f8;
       box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
       border-radius: 12px;
       padding: 10px 0;
@@ -305,23 +297,22 @@
   .inputH label {
       display: block;
       font-weight: 550;
-      color: #e7ecef;
+      color: #000;
       margin-bottom: 20px;
   }
 
  .inputH input {
       outline: none;
       border: none;
-      border-bottom: 2px solid #434343;
+      border-bottom: 1px solid #4f7df9;
       padding: 10px;  
       text-align: center;
       font-size: 16px;
       font-weight: bold;
       font-family: "Nunito", sans-serif;
       width: 80%;
-      height: 38%; 
+      height: 35%; 
       border-radius: 12px;
-      background: #e7ecef;
   }
    
 
@@ -336,7 +327,7 @@
 
 #clearButton {
   padding: 15px 25px;
-  background-color: #b10000;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 18px;
@@ -348,7 +339,7 @@
 
 #copyAndSendButton {
   padding: 15px 25px;
-  background-color: #0057b5;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 18px;
@@ -376,7 +367,7 @@
 #calculateButton {
   cursor: pointer;
     color: #fff;
-    background-color: #008f0c;
+    background-color: #007bff;
     font-size: 17px;
     border-radius: 14px;
     padding: 15px 0;
