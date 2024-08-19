@@ -184,7 +184,7 @@ function predictiveSearch() {
         // Update HTML elements with calculated values
         document.getElementById("orderNumberOutput").textContent = "Order Number: # " + orderNumber;
         document.getElementById("reservationFeeOutput").textContent = "Reservation Fee: R " + calculatedReservationFee.toFixed(2);
-        document.getElementById("totalOutput").textContent = "Total Order Amount: R " + calculatedTotal.toFixed(2);
+        document.getElementById("totalOutput").textContent = "Total Authorised Amount: R " + calculatedTotal.toFixed(2);
         document.getElementById("settlementAmountOutput").textContent = "Settlement Amount: R " + calculatedSettlementAmount.toFixed(2);
         document.getElementById("refundAmountOutput").textContent = "Refund Amount: R " + calculatedRefundAmount.toFixed(2);
         document.getElementById("storeNameOutput").textContent = "Store Name: " + storeName ;
