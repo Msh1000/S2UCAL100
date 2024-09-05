@@ -283,7 +283,7 @@ var selectedStore ="";
 
   // Open email 
   var emailBody = encodeURIComponent("Hi TJ,\n \nPlease advise if the below SPAR2U" + " " + keyWord + " " + "has been processed:\n\n" + outputText + "\n\n");
-  var ccEmails = 'Mohammed.Haroun@spar.co.za'
+  var ccEmails = 'Mohammed.Haroun@spar.co.za; retailhelpdeskco@spar.co.za'
   var emailLink = "mailto:support@switch.tj?subject=SPAR2U Refund Query - Order #"+orderNumber + " || " + storeName + " " + selectedStore + "&body=" + emailBody + "&cc=" + ccEmails;
   window.location.href = emailLink;
   copyAndSendButton.classList.remove("breathe-animation");
