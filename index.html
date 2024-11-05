@@ -57,10 +57,11 @@
                 </div>
 
                 <div class="input">
-                    <label for="Order" title="You can find the Shipment ID on the Naveo Hub">Order Number (Shipment ID) </label>
-                    <input type="number" title="You can find the Shipment ID on the Naveo Hub" id="orderInput" name="orderInput">
+                    <label for="Order" title="You can find the Order ID on the Naveo Hub Order URL">Order Number (Order ID) </label>
+                    <input type="number" title="You can find the Order ID on the Naveo Hub Order URL" id="orderInput" name="orderInput">
                 </div>
 
+        
 
                 <div class="containerHW">
                     <div class="inputH">
@@ -72,8 +73,26 @@
                         <input type="number" id="Captured" required>
 
                     </div>
-                    
                 </div>
+
+                <div class="tip-section">
+                    <label for="add-tip-toggle">Add Driver Tip</label>
+                    <label class="switch">
+                      <input type="checkbox" id="add-tip-toggle" onclick="toggleTips()">
+                      <span class="slider"></span>
+                    </label>
+                    
+                    <div class="tip-buttons" id="tip-buttons" style="display: none;">
+                      <button onclick="selectTip(10)">R10.00</button>
+                      <button onclick="selectTip(20)">R20.00</button>
+                      <button onclick="selectTip(30)">R30.00</button>
+                      <button onclick="selectTip(40)">R40.00</button>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                
                 
                     <div id="textFieldContainer"></div>
                     <p id="storeNameOutput"></p>

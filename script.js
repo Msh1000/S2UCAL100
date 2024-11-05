@@ -124,6 +124,21 @@ function predictiveSearch() {
   // Function to run when the Calculate button is clicked
   function calculate() {
 
+
+    var inputName = document.getElementById("textInput").value.toUpperCase();
+
+    var deliveryFee;
+    
+    // Check if the store name contains "TOPS"
+    if (inputName.includes("TOPS")) {
+        console.log("TOPS Store");
+        deliveryFee = 0; // No delivery fee for TOPS
+    } else {
+        deliveryFee = 35; // Normal delivery fee
+    }
+    
+    console.log("Delivery Fee: " + deliveryFee);
+    
  
      // Calculate sum of text field values
      var textFieldContainer = document.getElementById("textFieldContainer");
@@ -143,6 +158,7 @@ function predictiveSearch() {
       var capAmount = document.getElementById("Captured").value; // Captured amount
       var orderNumber = document.getElementById("orderInput").value; // 
       var warning = document.getElementById("warningMessage").value;
+      
 
       // Get selected radio button value
       let selectedStore = "";
@@ -153,11 +169,22 @@ function predictiveSearch() {
               break;
           }
       }
-    
-        var calculatedReservationFee = totalAmount *0.1;
+        var deliveryAndTip = deliveryFee + selectedTipAmount;
+
+        var calculatedCartValue = totalAmount - deliveryAndTip;
+        var calculatedReservationFee = calculatedCartValue * 0.1;
         var calculatedTotal = calculatedReservationFee + totalAmount *1;
         var calculatedRefundAmount = calculatedTotal - capAmount;
         var calculatedSettlementAmount = capAmount *1;
+
+        
+
+        console.log("Res Fee:" + calculatedReservationFee);
+
+        console.log("cart Value:"+  calculatedCartValue);
+        console.log("Total:" + calculatedTotal);
+
+
 
         if(totalAmount == "" || capAmount == "" ){
           document.getElementById("warningMessage").textContent = "Fill In Amount Fields!";
@@ -195,7 +222,8 @@ function predictiveSearch() {
         warningMessage.textContent = ""; // Clear warning message
         
         }
-    }
+
+      }
 
 
 
@@ -298,6 +326,45 @@ function closePopup() {
   popupOverlay.removeEventListener("click", closePopup);
 }
 
+function toggleTips() {
+  var tipButtons = document.getElementById("tip-buttons");
+  var isChecked = document.getElementById("add-tip-toggle").checked;
+  tipButtons.style.display = isChecked ? "flex" : "none";
+}
 
-  
+let selectedTipAmount = 0; // Initial tip amount
+
+function toggleTips() {
+  var tipButtons = document.getElementById("tip-buttons");
+  var isChecked = document.getElementById("add-tip-toggle").checked;
+
+  // Show or hide tip buttons
+  tipButtons.style.display = isChecked ? "flex" : "none";
+
+  // Reset selected tip to 0 if unchecked
+  if (!isChecked) {
+    selectedTipAmount = 0;
+    console.log(`Tip selected: R${selectedTipAmount}.00`);
+
+    // Remove selected class from all buttons
+    document.querySelectorAll(".tip-buttons button").forEach(button => {
+      button.classList.remove("selected");
+    });
+  }
+}
+
+function selectTip(tipAmount) {
+  selectedTipAmount = tipAmount
+  // Remove 'selected' class from all buttons and highlight the clicked button
+  document.querySelectorAll(".tip-buttons button").forEach(button => {
+    button.classList.remove("selected");
+  });
+  event.target.classList.add("selected");
+
+  console.log(`Tip selected: R${tipAmount}.00`);
+
+}
+
+
+
   
