@@ -126,7 +126,7 @@
     .input input {
         outline: none;
         border: none;
-        border-bottom: 1.9px solid #0057b5;
+        border-bottom: 1.9px solid #008f0c;
         text-align: center;
         font-size: 17px;
         height: 35px;    
@@ -149,7 +149,7 @@
     .store input{
       outline: none;
       border: none;
-      border-bottom: 1.9px solid #0057b5;
+      border-bottom: 1.9px solid #008f0c;
       text-align: center;
       font-size: 15px;
       height: 37px;    
@@ -274,7 +274,7 @@
  .inputW input {
   outline: none;
   border: none;
-  border-bottom: 1.9px solid #0057b5;
+  border-bottom: 1.9px solid #008f0c;
   padding: 10px;  
   text-align: center;
   font-size: 16px;
@@ -314,7 +314,7 @@
  .inputH input {
       outline: none;
       border: none;
-      border-bottom: 1.9px solid #0057b5;
+      border-bottom: 1.9px solid #008f0c;
       padding: 10px;  
       text-align: center;
       font-size: 16px;
